@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Design With Animated Using Only HTML & CSS | Waves Abimation, Dropdown Menu, Multiple Circle Rotation</title>
+<style>
+	*{
+		margin: 0;
+		outline: none;
+		box-sizing: border-box;
+	}
+	body{
+		font-family: space Grotesk;
+		background-color: #1E1F31;
+		overflow-x: hidden;
+	}
+	.wrapper{
+		position: relative;
+		height: 100vh;
+		overflow: hidden;
+	}
+	header{
+		padding: 50px 100px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	header ul li{
+		list-style: none;
+		display: inline-block;
+		margin: 0 15px;
+	}
+	header ul li a{
+		color: #aba9b4;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 1px;
+		transition: all ease 0.5s;
+	}
+	header ul li a:hover{
+		color: #f09053;
+	}
+	header ul li a.btn{
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f09053;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: all ease 0.5s;
+	}
+	header ul li a.btn:hover{
+		background-color: #615c59;
+	}
+	.content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding: 50px 100px 0;
+
+	}
+	.text{
+		width: 50%;
+		padding-right: 150px;
+	}
+ .text p{
+ 	font-size: 28px;
+ 	line-height: 46px;
+ 	color: #fff;
+ }
+  .text p span{
+  	color: #f09053;
+  }
+  .text a{
+  	position: relative;
+  	display: inline-block;
+  	font-size: 18px;
+  	text-transform: uppercase;
+  	color: #fff;
+  	text-decoration: none;
+  	padding: 18px 30px;
+  	letter-spacing: 2px;
+  	font-weight: 500;
+  	margin-top: 60px;
+}  
+  .text a:before{
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 60px;
+  	height: 60px;
+  	border-radius: 50px;
+  	background-color: #f09053;
+  	z-index: -1;
+  	transition: all ease 0.5s;
+  }
+  .text a:hover:before{
+  	width: 100%;
+}
+.img{
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background: radial-gradient(520px, #f08f538c, transparent 50%);
+	margin-top: -50px;
+}
+.email-icons{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.social-icons{
+	height: 1000%;
+}
+.social-icons img{
+	position: absolute;
+}
+.social-icons img::nth-child(1){
+   top: 0;
+	left: 42%;
+	}
+	.social-icons img:nth-child(2){
+		top: 25%;
+		right: 0;
+	}
+.social-icons img:nth-child(3){
+	top: 70%;
+	left: 70%;
+	}
+
+.social-icons img:nth-child(4){
+	top: 25%;
+	left: 0;
+	}
+.social-icons img:nth-child(5){
+	top: 70%;
+	left: 10%;
+	}
+
+
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header>
+<div class="logo">
+	<img src="./image/logo.svg" alt="">
+</div>
+<nav>
+<ul>
+<li><a href="#">Intergration</a></li>
+<li><a href="#">API</a></li>
+<li><a href="#">Product</a></li>
+<li><a href="#">Support</a></li>
+<li><a class="btn" href="#">Sign up</a></li>	
+
+</ul>	
+
+</nav>
+
+</header>
+<div class="content">
+<div class="text">
+	<p> Libero Sunt aut Excepturi natus leo etiam<span> corporis labortis</span> quas nunc semper eius ullam ullam velit voluptas.</p>
+	<a href="#" class="btn">Get started</a>
+</div>	
+<div class="img">
+<div class="social-icon.png">
+<img src="./image/social-icon1.png" alt="">
+<img src="./image/social-icon2.png" alt="">
+<img src="./image/social-icon3.png" alt="">
+<img src="./image/social-icon4.png" alt="">
+<img src="./image/social-icon5.png" alt="">
+</div>
+<img class="email-icon" src="./image/email-icon.png" alt="">
+
+</div>
+</div>	
+<div class="wave">
+<img src="./image/wave.svg" alt="">
+
+
+</div>
+</div>	
+
+</body>
+</html>	
